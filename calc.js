@@ -60,7 +60,7 @@ function calculator(arr) {
 }
 
 function playClick() {
-    let audio = new Audio("sounds/click.mp3")
+    let audio = new Audio("sounds/click1.mp3")
     audio.play();
 }
 document.addEventListener('click', playClick)
