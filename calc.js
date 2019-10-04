@@ -4,6 +4,7 @@ let temp = '';
 
 document.addEventListener('click', function () {
     let value = event.target.value;
+    playClick();
 
         //check if it is a number and add temp to entries
     if (!isNaN(value) || value === '.') {
@@ -57,3 +58,9 @@ function calculator(arr) {
 
     return number;
 }
+
+function playClick(){
+    let audio = new Audio("sounds/click.mp3")
+    audio.play();
+}
+document.addEventListener('click', playClick)
