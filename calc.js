@@ -6,18 +6,18 @@ document.addEventListener('click', function () {
     let value = event.target.value;
     playClick();
 
-        //check if it is a number and add temp to entries
+    //check if it is a number and add temp to entries
     if (!isNaN(value) || value === '.') {
         temp += value;
         document.getElementById("answer").value = temp.substring(0, 10);
 
-        //clear data by AC
+        //clear data by AC button
     } else if (value === "AC") {
         entries = [];
         temp = '';
         document.getElementById("answer").value = '';
 
-        //clear the last data typed by CE
+        //clear the last data typed by CE button
     } else if (value === 'CE') {
         temp = '';
         document.getElementById("answer").value = '';
@@ -38,7 +38,7 @@ document.addEventListener('click', function () {
     }
 
 });
-    //function to perform operations
+//function to perform operations
 var number;
 function calculator(arr) {
     number = Number(arr[0]);
@@ -59,7 +59,7 @@ function calculator(arr) {
     return number;
 }
 
-function playClick(){
+function playClick() {
     let audio = new Audio("sounds/click.mp3")
     audio.play();
 }
