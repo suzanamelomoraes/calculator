@@ -50,7 +50,7 @@ function calculator(arr) {
         else if (symbol === '-') { number -= nextNum; }
         else if (symbol === '*') { number *= nextNum; }
         else if (symbol === '/') { number /= nextNum; }
-        else if (symbol === '%') { number /= 100; }
+        else if (symbol === '%'){number = number * nextNum / 100;}
     }
     if (number < 0) {
         number = Math.abs(number);
