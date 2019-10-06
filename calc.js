@@ -40,12 +40,12 @@ document.addEventListener('click', function () {
 
 });
 //function to perform operations
-var number;
+let number;
 function calculator(arr) {
     number = Number(arr[0]);
-    for (var i = 1; i < arr.length; i++) {
-        var nextNum = Number(arr[i + 1]);
-        var symbol = arr[i];
+    for (let i = 1; i < arr.length; i++) {
+        let nextNum = Number(arr[i + 1]);
+        let symbol = arr[i];
 
         if (symbol === '+') { number += nextNum; }
         else if (symbol === '-') { number -= nextNum; }
