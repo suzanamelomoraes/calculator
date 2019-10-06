@@ -34,6 +34,7 @@ document.addEventListener('click', function () {
     } else {
         entries.push(temp);
         entries.push(value);
+        document.getElementById("answer").value = value;
         temp = '';
     }
 
